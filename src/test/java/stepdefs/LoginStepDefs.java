@@ -76,13 +76,29 @@ public class LoginStepDefs {
 	    }
 	    
 	    @Then("^User should be landed on Products Page\"([^\"]*)\"$")
-	    public void user_should_be_landed_on_products_pagesomething( String Name) throws Throwable {
+	    public void user_should_be_landed_on_products_pagesomething(String Name) throws Throwable {
 	    	
 	    	WebElement Error1= driver.findElement(By.xpath("//span[@class='title']"));
 			String Actualmsg= Error1.getText();
 			Assert.assertEquals(Name,Actualmsg);
 	       
 	    }
+	    
+//	    @And("^User add a product \"([^\"]*)\" to the cart$")
+//	    public void user_add_a_product_something_to_the_cart(String Product_Name) throws Throwable {
+//	    	
+//	    	
+//	    	////a/div[starts-with(text(),'Sauce Labs Backpack')]
+//	    	
+//	    	WebElement Product= driver.findElement(By.xpath("//a/div[starts-with(text(),'Sauce Labs Backpack')]"));
+//			String Actualmsg= Product.getText();
+//			Assert.assertEquals(Product_Name,Actualmsg);
+////	    	Product.click();
+//			WebElement add=driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']"));
+//			add.click();
+//	       
+//	    }
+
 
 	    
 

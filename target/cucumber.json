@@ -1,9 +1,9 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 308783872,
+              "duration": 329199292,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "user has navigated to Swag Login Page",
             "match": {
               "location": "LoginStepDefs.user_has_navigated_to_the_login_page()"
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-22T05:02:00.090Z",
+        "start_timestamp": "2021-11-22T07:00:03.716Z",
         "before": [
           {
             "result": {
-              "duration": 851349846,
+              "duration": 1013696846,
               "status": "passed"
             },
             "match": {
@@ -37,13 +37,13 @@
           }
         ],
         "line": 15,
-        "name": "Positive Login",
+        "name": "Add Product in Cart",
         "description": "",
-        "id": "swag-login;positive-login;;2",
+        "id": "product-selection;add-product-in-cart;;2",
         "after": [
           {
             "result": {
-              "duration": 67982314,
+              "duration": 45576,
               "status": "passed"
             },
             "match": {
@@ -56,10 +56,10 @@
         "steps": [
           {
             "result": {
-              "duration": 244941589,
+              "duration": 244975702,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "user enter correct username \"problem_user\" and password \"secret_sauce\"",
             "match": {
               "arguments": [
@@ -78,174 +78,59 @@
           },
           {
             "result": {
-              "duration": 127889802,
+              "duration": 119646692,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on Login Button",
+            "match": {
+              "location": "LoginStepDefs.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98911581,
               "status": "passed"
             },
             "line": 10,
-            "name": "user clicks on Login Button",
+            "name": "User add a product \"Sauce Labs Backpack\" to the cart",
             "match": {
-              "location": "LoginStepDefs.user_clicks_on_login_button()"
+              "arguments": [
+                {
+                  "val": "Sauce Labs Backpack",
+                  "offset": 20
+                }
+              ],
+              "location": "ProductStepDefs.user_add_a_product_something_to_the_cart(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003cPRODUCTS[!]\u003e but was:\u003cPRODUCTS[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat stepdefs.LoginStepDefs.user_should_be_landed_on_products_pagesomething(LoginStepDefs.java:83)\n\tat ✽.User should be landed on Products Page\"PRODUCTS!\"(file:src/test/java/features/swag_login.feature:11)\n",
-              "duration": 43090840,
-              "status": "failed"
+              "duration": 39731090,
+              "status": "passed"
             },
             "line": 11,
-            "name": "User should be landed on Products Page\"PRODUCTS!\"",
+            "name": "validate that product product is added in cart",
             "match": {
-              "arguments": [
-                {
-                  "val": "PRODUCTS!",
-                  "offset": 39
-                }
-              ],
-              "location": "LoginStepDefs.user_should_be_landed_on_products_pagesomething(String)"
+              "location": "ProductStepDefs.validate_that_product_product_is_added_in_cart()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@LoginFeature"
-          },
-          {
-            "name": "@Test1"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 306585802,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user has navigated to Swag Login Page",
-            "match": {
-              "location": "LoginStepDefs.user_has_navigated_to_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-11-22T05:02:01.771Z",
-        "before": [
-          {
-            "result": {
-              "duration": 437798821,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Baseclass.setup()"
-            }
-          }
-        ],
-        "line": 25,
-        "name": "Negative Login",
-        "description": "",
-        "id": "swag-login;negative-login;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 67067167,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Baseclass.TearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 238870544,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user enter correct username \"problem_user\" and password \"s!cret_sauce\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "problem_user",
-                  "offset": 29
-                },
-                {
-                  "val": "s!cret_sauce",
-                  "offset": 57
-                }
-              ],
-              "location": "LoginStepDefs.user_enter_correct_username_something_and_password_something(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 69929068,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user clicks on Login Button",
-            "match": {
-              "location": "LoginStepDefs.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 28235447,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "you should get error messgae\"Epic sadface: Username and password do not match any user in this service\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Epic sadface: Username and password do not match any user in this service",
-                  "offset": 29
-                }
-              ],
-              "location": "LoginStepDefs.you_should_get_error_messgaesomething(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@LoginFeature"
-          },
-          {
-            "name": "@Test2"
+            "name": "@TestProduct"
           }
         ]
       }
     ],
-    "name": "Swag Login",
+    "name": "Product Selection",
     "description": "",
-    "id": "swag-login",
+    "id": "product-selection",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/swag_login.feature",
-    "tags": [
-      {
-        "name": "@LoginFeature",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/java/features/Products.feature",
+    "tags": []
   }
 ]

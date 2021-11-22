@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="stepdefs.TestRunner" time="2.834" tests="2" errors="0" skipped="0" failures="1">
+<testsuite name="stepdefs.TestRunner" time="2.796" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -58,46 +58,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="Positive Login" classname="Swag Login" time="1.68">
-    <failure message="expected:&lt;PRODUCTS[!]&gt; but was:&lt;PRODUCTS[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<PRODUCTS[!]> but was:<PRODUCTS[]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefs.LoginStepDefs.user_should_be_landed_on_products_pagesomething(LoginStepDefs.java:83)
-	at ✽.User should be landed on Products Page"PRODUCTS!"(file:src/test/java/features/swag_login.feature:11)
-]]></failure>
-    <system-out><![CDATA[@LoginFeature
-Feature: Swag Login
-
-  @Test1
-  Scenario Outline: Positive Login # src/test/java/features/swag_login.feature:8
-    When user enter correct username "<Username>" and password "<Password>"
-    And user clicks on Login Button
-    Then User should be landed on Products Page"<Name>"
-
-    Examples: 
-
-  Background:                                   # src/test/java/features/swag_login.feature:4
-    Given user has navigated to Swag Login Page # LoginStepDefs.user_has_navigated_to_the_login_page()
-
-  @LoginFeature @Test1
-  Scenario Outline: Positive Login                                              # src/test/java/features/swag_login.feature:15
-    When user enter correct username "problem_user" and password "secret_sauce" # LoginStepDefs.user_enter_correct_username_something_and_password_something(String,String)
-    And user clicks on Login Button                                             # LoginStepDefs.user_clicks_on_login_button()
-    Then User should be landed on Products Page"PRODUCTS!"                      # LoginStepDefs.user_should_be_landed_on_products_pagesomething(String)
-      org.junit.ComparisonFailure: expected:<PRODUCTS[!]> but was:<PRODUCTS[]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefs.LoginStepDefs.user_should_be_landed_on_products_pagesomething(LoginStepDefs.java:83)
-	at ✽.User should be landed on Products Page"PRODUCTS!"(file:src/test/java/features/swag_login.feature:11)
-
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 23244
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Nov 22, 2021 5:02:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Negative Login" classname="Swag Login" time="1.154"/>
+  <testcase name="Positive Login" classname="Swag Login" time="1.648"/>
+  <testcase name="Negative Login" classname="Swag Login" time="1.148"/>
 </testsuite>

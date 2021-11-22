@@ -11,8 +11,8 @@ Feature: Swag Login
     Then User should be landed on Products Page"<Name>"
 
     Examples: 
-      | Username     | Password     | Name      |
-      | problem_user | secret_sauce | PRODUCTS! |
+      | Username     | Password     | Name     |
+      | problem_user | secret_sauce | PRODUCTS |
 
   @Test2
   Scenario Outline: Negative Login
