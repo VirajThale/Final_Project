@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 329199292,
+              "duration": 315015765,
               "status": "passed"
             },
             "line": 4,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-22T07:00:03.716Z",
+        "start_timestamp": "2021-11-22T07:29:46.323Z",
         "before": [
           {
             "result": {
-              "duration": 1013696846,
+              "duration": 920084918,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "after": [
           {
             "result": {
-              "duration": 45576,
+              "duration": 42714,
               "status": "passed"
             },
             "match": {
@@ -56,7 +56,7 @@
         "steps": [
           {
             "result": {
-              "duration": 244975702,
+              "duration": 235112741,
               "status": "passed"
             },
             "line": 8,
@@ -78,7 +78,7 @@
           },
           {
             "result": {
-              "duration": 119646692,
+              "duration": 120004102,
               "status": "passed"
             },
             "line": 9,
@@ -90,7 +90,7 @@
           },
           {
             "result": {
-              "duration": 98911581,
+              "duration": 97795178,
               "status": "passed"
             },
             "line": 10,
@@ -108,13 +108,19 @@
           },
           {
             "result": {
-              "duration": 39731090,
+              "duration": 35346417,
               "status": "passed"
             },
             "line": 11,
-            "name": "validate that product product is added in cart",
+            "name": "validate that product product is added in cart\"1\"",
             "match": {
-              "location": "ProductStepDefs.validate_that_product_product_is_added_in_cart()"
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 47
+                }
+              ],
+              "location": "ProductStepDefs.validate_that_product_product_is_added_in_cart(String)"
             },
             "keyword": "Then "
           }

@@ -27,7 +27,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "validate that product product is added in cart",
+  "name": "validate that product product is added in cart\"\u003cProduct_Id\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -39,6 +39,7 @@ formatter.examples({
       "cells": [
         "Username",
         "Password",
+        "Product_Id",
         "Product_Name"
       ]
     },
@@ -46,6 +47,7 @@ formatter.examples({
       "cells": [
         "problem_user",
         "secret_sauce",
+        "1",
         "Sauce Labs Backpack"
       ]
     }
@@ -110,11 +112,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "validate that product product is added in cart",
+  "name": "validate that product product is added in cart\"1\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ProductStepDefs.validate_that_product_product_is_added_in_cart()"
+  "location": "ProductStepDefs.validate_that_product_product_is_added_in_cart(String)"
 });
 formatter.result({
   "status": "passed"
