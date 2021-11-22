@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -48,10 +49,10 @@ public class LoginStepDefs {
 	       
 	    }
 	    
-	    @Then("^user should be exit$")
-	    public void  user_should_be_exit() throws Throwable{
-	    	driver.close();
-	    }
+//	    @Then("^user should be exit$")
+//	    public void  user_should_be_exit() throws Throwable{
+//	    	driver.close();
+//	    }
 
 	    @When("^user enter correct username \"([^\"]*)\" and password \"([^\"]*)\"$")
 	    public void user_enter_correct_username_something_and_password_something(String usernameVal, String passwordVal) throws Throwable {
@@ -66,11 +67,20 @@ public class LoginStepDefs {
 	  
 	    
 	    @Then("^you should get error messgae\"([^\"]*)\"$")
-	    public void you_should_get_error_messgaesomething(String Expmsg) throws Throwable {
-	     	WebElement Error1= driver.findElement(By.cssSelector("//h3[starts-with(text(),'Epic sadface: ')]"));
+	    public void you_should_get_error_messgaesomething(String Expmsg) throws Throwable 
+	    {
+	     	WebElement Error1= driver.findElement(By.xpath("//h3[starts-with(text(),'Epic sadface: ')]"));
 			String Actualmsg= Error1.getText();
-			
 			Assert.assertEquals(Expmsg,Actualmsg);
+	       
+	    }
+	    
+	    @Then("^User should be landed on Products Page\"([^\"]*)\"$")
+	    public void user_should_be_landed_on_products_pagesomething( String Name) throws Throwable {
+	    	
+	    	WebElement Error1= driver.findElement(By.xpath("//span[@class='title']"));
+			String Actualmsg= Error1.getText();
+			Assert.assertEquals(Name,Actualmsg);
 	       
 	    }
 
