@@ -1,9 +1,9 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 315015765,
+              "duration": 308323572,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "user has navigated to Swag Login Page",
             "match": {
               "location": "LoginStepDefs.user_has_navigated_to_the_login_page()"
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-22T07:29:46.323Z",
+        "start_timestamp": "2021-11-26T13:29:21.848Z",
         "before": [
           {
             "result": {
-              "duration": 920084918,
+              "duration": 1247517617,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 15,
+        "line": 16,
         "name": "Add Product in Cart",
         "description": "",
         "id": "product-selection;add-product-in-cart;;2",
         "after": [
           {
             "result": {
-              "duration": 42714,
+              "duration": 48100,
               "status": "passed"
             },
             "match": {
@@ -56,10 +56,10 @@
         "steps": [
           {
             "result": {
-              "duration": 235112741,
+              "duration": 234678551,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "user enter correct username \"problem_user\" and password \"secret_sauce\"",
             "match": {
               "arguments": [
@@ -78,10 +78,10 @@
           },
           {
             "result": {
-              "duration": 120004102,
+              "duration": 141073822,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "user clicks on Login Button",
             "match": {
               "location": "LoginStepDefs.user_clicks_on_login_button()"
@@ -90,10 +90,10 @@
           },
           {
             "result": {
-              "duration": 97795178,
+              "duration": 98282850,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "User add a product \"Sauce Labs Backpack\" to the cart",
             "match": {
               "arguments": [
@@ -108,10 +108,10 @@
           },
           {
             "result": {
-              "duration": 35346417,
+              "duration": 31680463,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "validate that product product is added in cart\"1\"",
             "match": {
               "arguments": [
@@ -127,6 +127,9 @@
         ],
         "tags": [
           {
+            "name": "@ProductSelction"
+          },
+          {
             "name": "@TestProduct"
           }
         ]
@@ -137,6 +140,263 @@
     "id": "product-selection",
     "keyword": "Feature",
     "uri": "file:src/test/java/features/Products.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@ProductSelction",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 318313978,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has navigated to Swag Login Page",
+            "match": {
+              "location": "LoginStepDefs.user_has_navigated_to_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-26T13:29:23.934Z",
+        "before": [
+          {
+            "result": {
+              "duration": 518102923,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Positive Login",
+        "description": "",
+        "id": "swag-login;positive-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 30492,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 211708910,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enter correct username \"problem_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "problem_user",
+                  "offset": 29
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 57
+                }
+              ],
+              "location": "LoginStepDefs.user_enter_correct_username_something_and_password_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131551976,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on Login Button",
+            "match": {
+              "location": "LoginStepDefs.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41610671,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be landed on Products Page\"PRODUCTS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PRODUCTS",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginStepDefs.user_should_be_landed_on_products_pagesomething(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@Test1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 341850346,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has navigated to Swag Login Page",
+            "match": {
+              "location": "LoginStepDefs.user_has_navigated_to_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-26T13:29:25.164Z",
+        "before": [
+          {
+            "result": {
+              "duration": 403969742,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Negative Login",
+        "description": "",
+        "id": "swag-login;negative-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 47753,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 210941740,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enter correct username \"problem_user\" and password \"s!cret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "problem_user",
+                  "offset": 29
+                },
+                {
+                  "val": "s!cret_sauce",
+                  "offset": 57
+                }
+              ],
+              "location": "LoginStepDefs.user_enter_correct_username_something_and_password_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83742566,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user clicks on Login Button",
+            "match": {
+              "location": "LoginStepDefs.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30868032,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "you should get error messgae\"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username and password do not match any user in this service",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefs.you_should_get_error_messgaesomething(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@Test2"
+          }
+        ]
+      }
+    ],
+    "name": "Swag Login",
+    "description": "",
+    "id": "swag-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/swag_login.feature",
+    "tags": [
+      {
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
